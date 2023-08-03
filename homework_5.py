@@ -1,27 +1,16 @@
-# a
-def supply(weapons,amount):
-    dead_russians = weapons * amount
-    return dead_russians
+def arguments(arg1, arg2):
+    if isinstance(arg1, (int, float)) and isinstance(arg2, (int, float)):
+        return arg1 * arg2
+    elif isinstance(arg1, str) and isinstance(arg2, str):
+        return arg1 + arg2
+    else:
+        return arg1, arg2
 
 
-calculation = supply(70000000, 2)
-print(calculation)
+dead_russians = arguments(70000000, 2)
+gaslo = arguments('Slava', ' Ukraini!')
+supply = arguments('F-', 16)
 
-
-# b
-def first_gaslo(a,b):
-    gaslo = a + b
-    return gaslo
-
-
-say_it = first_gaslo('Slava', ' Ukraini!')
-print(say_it)
-
-
-# c
-def second_gaslo(*args):
-    return args
-
-
-say_it = second_gaslo('Heroyam', ' Slava!')
-print(say_it)
+print(dead_russians)
+print(gaslo)
+print(supply)
