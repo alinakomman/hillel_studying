@@ -5,5 +5,5 @@ def generator(first, second):
         certain_number += 1
 
 
-for num in generator(9, 33):
+for num in generator(13, 33):
     print(num)
