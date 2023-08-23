@@ -57,7 +57,6 @@ class Round(Figures):
         return perimeter
 
 
-# Create a collection of figures
 figures = [Triangle(3, 4, 5), Round(6)]
 
 total_perimeter = 0
