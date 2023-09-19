@@ -3,7 +3,7 @@ import requests
 
 
 first_test_data = [("Hju", "Fox", "awershjdf1hjo234iuy@yu.com", "ghjyu123456G", "ghjyu123456G")]
-second_test_data = [("Hju", "Fox", "awershjdf1hjo234iuy@yu.com", "ghjyu123456GZ", "ghjyu123456GZ")]
+second_test_data = [("Hju", "Fox", "awershjdf1hjo234iuy@yu.com", "ghjyu123456G", "ghjyu123456GZ")]
 
 
 @pytest.mark.parametrize("name, last_name, email, password, repeat_password", first_test_data)
